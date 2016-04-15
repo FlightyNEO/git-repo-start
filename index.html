@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Блоки</title>
+        <link href="project.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="" method="post">
+            <div class="breadcrumbs">
+               
+                <input type="radio" name="ref" id="opis" checked>
+                <label for="opis"><span>Описание</span></label>
+                <input type="radio" name="ref" id="ingr" class="active">
+                <label for="ingr"><span>Ингредиенты</span></label>
+                <input type="radio" name="ref" id="por">
+                <label for="por"><span>Пораметры</span></label>
+                <input type="radio" name="ref" id="bok">
+                <label for="bok"><span>Бокалы</span></label>
+                
+                <div class="opis">
+                    <header>
+                        <span class="left">Описание</span>
+                    </header>
+                    <main class="opis-2">
+                        <div class="foto"></div>
+                        <label><input type="file" name="foto"> Загрузить</label>
+                        <input type="text" placeholder="Название коктейля" name="name" required>
+                        <input type="text" placeholder="Альтернативное название через запятую" name="alt_name" >
+                        <textarea placeholder="Краткое описание" name="description"></textarea>
+                        <textarea placeholder="Инструкция для приготовления" name="instruction"></textarea>
+                        <div class="closed"></div>
+                    </main>
+                    <footer>
+                        <label class="right" for="ingr">Ингредиенты</label>
+                    </footer>
+                </div>
+                
+                <div class="ingr">
+                    <header>
+                        <span class="left">Ингредиенты</span>
+                        <span class="right"><div class="help">Украшение?</div></span>
+                    </header>
+                    <main class="ingr-2">
+                        <div class="ingr-value">
+                            <div class="select-wrapper">
+                                <select id="drink">
+                                    <option>Название ингредиента</option>
+                                    <optgroup label="Безалкогольные напитки">
+                                        <option value="milk-1">Молоко</option>
+                                        <option value="woter-1">Вода</option>
+                                        <option value="juice-1">Сок</option>
+                                        <option value="tonic-1">Тоник</option>
+                                    </optgroup>
+                                    <optgroup label="Алкогольные напитки">
+                                        <option value="rum-1">Ром</option>
+                                        <option value="vodka-1">Водка</option>
+                                        <option value="whiskey-1">Виски</option>
+                                        <option value="gin-1">Джин</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="number-wrapper">
+                                <input type="number" min="1" max="300" name="quantity-1">
+                            </div>
+                            <div class="select-wrapper">
+                                <select>
+                                    <option value="milliliters-1">мл</option>
+                                    <option value="gram-1">гр</option>
+                                    <option value="kgs-1">кг</option>
+                                </select>
+                            </div>
+                            <input type="checkbox" value="decoration-1">
+                        </div>
+                        
+                        <div class="ingr-value">
+                            <div class="select-wrapper">
+                                <select id="drink">
+                                    <option>Название ингредиента</option>
+                                    <optgroup label="Безалкогольные напитки">
+                                        <option value="milk-2">Молоко</option>
+                                        <option value="woter-2">Вода</option>
+                                        <option value="juice-2">Сок</option>
+                                        <option value="tonic-2">Тоник</option>
+                                    </optgroup>
+                                    <optgroup label="Алкогольные напитки">
+                                        <option value="rum-2">Ром</option>
+                                        <option value="vodka-2">Водка</option>
+                                        <option value="whiskey-2">Виски</option>
+                                        <option value="gin-2">Джин</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="number-wrapper">
+                                <input type="number" min="1" max="300" name="quantity-2">
+                            </div>
+                            <div class="select-wrapper">
+                                <select>
+                                    <option value="milliliters-2">мл</option>
+                                    <option value="gram-2">гр</option>
+                                    <option value="kgs-2">кг</option>
+                                </select>
+                            </div>
+                            <input type="checkbox" value="decoration-2">
+                        </div>
+                        
+                        <div class="ingr-value">
+                            <div class="select-wrapper">
+                                <select id="drink">
+                                    <option>Название ингредиента</option>
+                                    <optgroup label="Безалкогольные напитки">
+                                        <option value="milk-3">Молоко</option>
+                                        <option value="woter-3">Вода</option>
+                                        <option value="juice-3">Сок</option>
+                                        <option value="tonic-3">Тоник</option>
+                                    </optgroup>
+                                    <optgroup label="Алкогольные напитки">
+                                        <option value="rum-3">Ром</option>
+                                        <option value="vodka-3">Водка</option>
+                                        <option value="whiskey-3">Виски</option>
+                                        <option value="gin-3">Джин</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="number-wrapper">
+                                <input type="number" min="1" max="300" name="quantity-3">
+                            </div>
+                            <div class="select-wrapper">
+                                <select>
+                                    <option value="milliliters-3">мл</option>
+                                    <option value="gram-3">гр</option>
+                                    <option value="kgs-3">кг</option>
+                                </select>
+                            </div>
+                            <input type="checkbox" value="decoration-3">
+                        </div>
+                        
+                       <div class="ingr-value">
+                            <div class="select-wrapper">
+                                <select id="drink">
+                                    <option>Название ингредиента</option>
+                                    <optgroup label="Безалкогольные напитки">
+                                        <option value="milk-4">Молоко</option>
+                                        <option value="woter-4">Вода</option>
+                                        <option value="juice-4">Сок</option>
+                                        <option value="tonic-4">Тоник</option>
+                                    </optgroup>
+                                    <optgroup label="Алкогольные напитки">
+                                        <option value="rum-4">Ром</option>
+                                        <option value="vodka-4">Водка</option>
+                                        <option value="whiskey-4">Виски</option>
+                                        <option value="gin-4">Джин</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="number-wrapper">
+                                <input type="number" min="1" max="300" name="quantity-4">
+                            </div>
+                            <div class="select-wrapper">
+                                <select>
+                                    <option value="milliliters-4">мл</option>
+                                    <option value="gram-4">гр</option>
+                                    <option value="kgs-4">кг</option>
+                                </select>
+                            </div>
+                            <input type="checkbox" value="decoration-4">
+                        </div>
+                        
+                        <div class="ingr-value">
+                            <div class="select-wrapper">
+                                <select id="drink">
+                                    <option>Название ингредиента</option>
+                                    <optgroup label="Безалкогольные напитки">
+                                        <option value="milk-5">Молоко</option>
+                                        <option value="woter-5">Вода</option>
+                                        <option value="juice-5">Сок</option>
+                                        <option value="tonic-5">Тоник</option>
+                                    </optgroup>
+                                    <optgroup label="Алкогольные напитки">
+                                        <option value="rum-5">Ром</option>
+                                        <option value="vodka-5">Водка</option>
+                                        <option value="whiskey-5">Виски</option>
+                                        <option value="gin-5">Джин</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="number-wrapper">
+                                <input type="number" min="1" max="300" name="quantity-5">
+                            </div>
+                            <div class="select-wrapper">
+                                <select>
+                                    <option value="milliliters-5">мл</option>
+                                    <option value="gram-5">гр</option>
+                                    <option value="kgs-5">кг</option>
+                                </select>
+                            </div>
+                            <input type="checkbox" value="decoration-5">
+                        </div>
+                        
+                        <div class="ingr-value">
+                            <div class="select-wrapper">
+                                <select id="drink">
+                                    <option>Название ингредиента</option>
+                                    <optgroup label="Безалкогольные напитки">
+                                        <option value="milk-6">Молоко</option>
+                                        <option value="woter-6">Вода</option>
+                                        <option value="juice-6">Сок</option>
+                                        <option value="tonic-6">Тоник</option>
+                                    </optgroup>
+                                    <optgroup label="Алкогольные напитки">
+                                        <option value="rum-6">Ром</option>
+                                        <option value="vodka-6">Водка</option>
+                                        <option value="whiskey-6">Виски</option>
+                                        <option value="gin-6">Джин</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="number-wrapper">
+                                <input type="number" min="1" max="300" name="quantity-6">
+                            </div>
+                            <div class="select-wrapper">
+                                <select>
+                                    <option value="milliliters-6">мл</option>
+                                    <option value="gram-6">гр</option>
+                                    <option value="kgs-6">кг</option>
+                                </select>
+                            </div>
+                            <input type="checkbox" value="decoration-6">
+                        </div>
+                        
+                        <div class="ingr-value">
+                            <div class="select-wrapper">
+                                <select id="drink">
+                                    <option>Название ингредиента</option>
+                                    <optgroup label="Безалкогольные напитки">
+                                        <option value="milk-7">Молоко</option>
+                                        <option value="woter-7">Вода</option>
+                                        <option value="juice-7">Сок</option>
+                                        <option value="tonic-7">Тоник</option>
+                                    </optgroup>
+                                    <optgroup label="Алкогольные напитки">
+                                        <option value="rum-7">Ром</option>
+                                        <option value="vodka-7">Водка</option>
+                                        <option value="whiskey-7">Виски</option>
+                                        <option value="gin-7">Джин</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                            <div class="number-wrapper">
+                                <input type="number" min="1" max="300" name="quantity-7">
+                            </div>
+                            <div class="select-wrapper">
+                                <select>
+                                    <option value="milliliters-7">мл</option>
+                                    <option value="gram-7">гр</option>
+                                    <option value="kgs-7">кг</option>
+                                </select>
+                            </div>
+                            <input type="checkbox" value="decoration-7">
+                        </div>
+                        
+                    </main>
+                    <footer>
+                        <label class="right" for="por">Пораметры</label>
+                        <label class="left" for="opis">Описание</label>
+                    </footer>
+                </div>
+                
+                <div class="por">
+                    <header>
+                        <span class="left">Параметры приготовления</span>
+                    </header>
+                    <main class="por-2">
+                        <fieldset class="param_prig">
+                            <label>&#10003 Порций
+                                <div class="number-wrapper">
+                                    <input type="number" min="1" max="100" value="amount_of_portions">
+                                </div>
+                            </label>
+                            <label>&#10003 Время
+                                <div class="select-wrapper">
+                                    <select>
+                                        <option value="time">5 мин.</option>
+                                        <option value="time">10 мин.</option>
+                                        <option value="time">15 мин.</option>
+                                     </select>
+                                </div>
+                            </label>
+                            <label>&#10003 Сложность
+                                <div class="select-wrapper">
+                                    <select>
+                                        <option value="complexity">легко</option>
+                                        <option value="complexity">средне</option>
+                                        <option value="complexity">сложно</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <label>&#10003 Метод
+                                <div class="select-wrapper">
+                                    <select>
+                                        <option value="method">в шейкере</option>
+                                        <option value="method">в блендере</option>
+                                        <option value="method">в бокале</option>
+                                    </select>
+                                </div>
+                            </label>
+                        </fieldset>
+                        
+                        <fieldset class="type_coctail">
+                            <legend><span>Тип коктейля</span></legend>
+                            <label>&#10003 По крепкости
+                                <div class="select-wrapper">
+                                    <select>
+                                        <option>Hot Drinks</option>
+                                        <option>Long Drinks</option>
+                                        <option>Short Drinks</option>
+                                        <option>Shot Drinks</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <label>&#10003 По вкусу
+                                <div class="select-wrapper">
+                                    <select>
+                                        <option>Дэйзи</option>
+                                        <option>Коллинзы</option>
+                                        <option>Кулеры</option>
+                                        <option>Коблеры</option>
+                                        <option>Сауэры</option>
+                                        <option>Слинги</option>
+                                        <option>Суизлы</option>
+                                        <option>Физзы</option>
+                                        <option>Фиксы</option>
+                                    </select>
+                                </div>
+                            </label>
+                            <label>&#10003 По исполнению
+                                <div class="select-wrapper">
+                                    <select>
+                                        <option>Слоистые коктейли</option>
+                                        <option>Сэнгери</option>
+                                        <option>Тонизирующие</option>
+                                    </select>
+                                </div>
+                            </label>
+                        </fieldset>
+                        
+                        <fieldset class="tags">
+                            <legend><span>Теги</span></legend>
+                            <label><input type="checkbox">Бодрящие</label>
+                            <label><input type="checkbox">Соленык</label>
+                            <label><input type="checkbox">Необыч. по употреб.</label>
+                            <label><input type="checkbox">Горькие</label>
+                            <label><input type="checkbox">Травяные</label>
+                            <label><input type="checkbox">Для компании</label>
+                            <label><input type="checkbox">Кислые</label>
+                            <label><input type="checkbox">Тропические</label>
+                            <label><input type="checkbox">Для друзей</label>
+                            <label><input type="checkbox">Сладкие</label>
+                            <label><input type="checkbox">Фруктовые</label>
+                            <label><input type="checkbox">Экзотические</label>
+                        </fieldset>
+                    </main>
+                    <footer>
+                        <label class="right" for="bok">Бокалы</label>
+                        <label class="left" for="ingr">Ингредиенты</label>
+                    </footer>
+                </div>
+                
+                <div class="bok">
+                    <header>
+                        <span class="left">Бокалы</span>
+                    </header>
+                    <main class="bok-2">
+                        <input type="radio" name="bok" id="bok-1">
+                        <label for="bok-1"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-2">
+                        <label for="bok-2"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-3">
+                        <label for="bok-3"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-4">
+                        <label for="bok-4"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-5">
+                        <label for="bok-5"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-6">
+                        <label for="bok-6"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-7">
+                        <label for="bok-7"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-8">
+                        <label for="bok-8"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-9">
+                        <label for="bok-9"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-10">
+                        <label for="bok-10"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-11">
+                        <label for="bok-11"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-12">
+                        <label for="bok-12"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-13">
+                        <label for="bok-13"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-14">
+                        <label for="bok-14"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-15">
+                        <label for="bok-15"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-16">
+                        <label for="bok-16"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-17">
+                        <label for="bok-17"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                        <input type="radio" name="bok" id="bok-18">
+                        <label for="bok-18"><div class="help">Бокал<br>Для слоистых коктейлей</div></label>
+                    </main>
+                    <footer>
+                        <label class="left" for="por">Пораметры</label>
+                        <input type="submit" value="Отправить">
+                    </footer>
+                </div>
+
+            </div>
+        </form>
+    </body>
+</html>
